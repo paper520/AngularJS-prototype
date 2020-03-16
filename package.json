@@ -1,9 +1,11 @@
 {
   "name": "angularjs-prototype",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "🎯 基于Angular JS搭建的原型项目。",
   "scripts": {
-    "start": "./node_modules/.bin/grunt"
+    "start": "npm install && npm run dev",
+    "dev": "./node_modules/.bin/grunt",
+    "prod": "node_modules/.bin/grunt prod"
   },
   "repository": {
     "type": "git",
@@ -20,7 +22,14 @@
   },
   "homepage": "https://github.com/AC-angle/AngularJS-prototype#readme",
   "devDependencies": {
+    "autoprefixer": "^7.2.5",
     "grunt": "^1.0.4",
-    "grunt-contrib-connect": "^2.1.0"
+    "grunt-contrib-connect": "^2.1.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-csslint": "^2.0.0",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-uglify": "^3.3.0",
+    "grunt-postcss": "^0.9.0"
   }
 }

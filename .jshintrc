@@ -1,0 +1,18 @@
+{
+    "-W064": true,
+    "strict": true,
+    "eqnull": true,
+    "undef": true,
+    "globals": {
+        "$": true,
+        "window": true,
+        "navigator": true,
+        "ptellerApp": true,
+        "jQuery": true,
+        "FormData": true,
+        "setTimeout": true,
+        "document": true,
+        "angular": true,
+        "console": true
+    }
+}

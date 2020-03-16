@@ -18,11 +18,16 @@
 
   ];
 
-  for (var i = 0; i < cssFiles.length; i++) {
-    loadCss(cssFiles[i]);
-  }
-  for (var i = 0; i < jsFiles.length; i++) {
-    loadJs(jsFiles[i]);
+  if (typeof (exports) != "undefined") {
+    exports.jsFiles = jsFiles;
+    exports.cssFiles = cssFiles;
+  } else {
+    for (var i = 0; i < cssFiles.length; i++) {
+      loadCss(cssFiles[i]);
+    }
+    for (var i = 0; i < jsFiles.length; i++) {
+      loadJs(jsFiles[i]);
+    }
   }
 
   function loadJs(path) {
